@@ -16,7 +16,7 @@ public class SalaryCalculator {
 
     public double finalSalary(int daysSkipped, int productsSold) {
         double grossSalary = (BASE_SALARY * salaryMultiplier(daysSkipped)) + bonusForProductsSold(productsSold);
-
+        
         return (grossSalary >= 2000.00) ? 2000.00 : grossSalary; 
     }
 }
