@@ -18,12 +18,12 @@ class AppointmentScheduler {
     }
 
     public String getDescription(LocalDateTime appointmentDate) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE, MMMM d, yyyy, 'at' HH:mm");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE, MMMM d, yyyy, 'at' h:mm a");
         return "You have an appointment on " + appointmentDate.format(formatter) + ".";
     }
 
     public LocalDate getAnniversaryDate() {
         int currentYear = LocalDate.now().getYear();
-        return LocalDate.of(currentYear, 9, 12);
+        return LocalDate.of(currentYear, 9, 15);
     }
 }
